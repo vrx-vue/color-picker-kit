@@ -10,7 +10,8 @@
     "update:deps": "taze major -w -i -a -r -f",
     "clean:deps": "vfdel node_modules packages/*/node_modules playground/*/node_modules",
     "force:clean:deps": "vfdel pnpm-lock.yaml && pnpm clean:deps",
-    "force:install": "pnpm force:clean:deps && pnpm install"
+    "force:install": "pnpm force:clean:deps && pnpm install",
+    "docs:build": "pnpm --filter ./docs/ docs:build"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.1",

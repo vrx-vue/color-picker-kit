@@ -3,7 +3,6 @@ import { withPwa } from '@vite-pwa/vitepress'
 import UnoCss from 'unocss/vite'
 import pkg from '../package.json'
 import { pwa } from './pwa'
-import { giteeIcon } from './gitee-icon' with { type: 'macro' }
 
 export default withPwa(
   defineConfig({
@@ -19,7 +18,7 @@ export default withPwa(
     themeConfig: {
       logo: '/icon.svg',
       lastUpdatedText: '最后更新时间',
-      socialLinks: [{ link: 'https://gitee.com/vrx/color-picker-kit', icon: { svg: giteeIcon } }],
+      socialLinks: [{ link: 'https://gitee.com/vrx/color-picker-kit', icon: 'github' }],
       outline: {
         label: '本页',
       },
@@ -96,7 +95,7 @@ export default withPwa(
           items: [
             {
               text: 'Changelog',
-              link: 'https://gitee.com/vrx/color-picker-kit/blob/main/CHANGELOG.md',
+              link: 'https://github.com/vrx-vue/color-picker-kit/blob/main/CHANGELOG.md',
             },
           ],
         },
