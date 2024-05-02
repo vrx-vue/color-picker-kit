@@ -1,6 +1,6 @@
 {
   "name": "vrx-color-picker",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@9.0.6",
   "type": "module",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.1",
     "@types/node": "^20.12.8",
-    "@vill-v/bumpp-gitee": "^1.0.4",
+    "@vill-v/bumpp": "^1.0.4",
     "@vill-v/eslint-config": "^1.2.1",
     "@vill-v/prettier-config": "^1.0.0",
     "@vill-v/tsconfig": "^1.0.1",

@@ -14,7 +14,7 @@ importers:
       '@types/node':
         specifier: ^20.12.8
         version: 20.12.8
-      '@vill-v/bumpp-gitee':
+      '@vill-v/bumpp':
         specifier: ^1.0.4
         version: 1.0.4
       '@vill-v/eslint-config':
@@ -1576,11 +1576,6 @@ packages:
     resolution: {integrity: sha512-q7GN7vkQYn79n7vYIUlaa7gXGwc7pk0Qo3z3ZFwWGE43/DtZnn2Hwl5UjgBAgi9McA+xqHJEHRsJnI7HJPHUYA==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
-
-  '@vill-v/bumpp-gitee@1.0.4':
-    resolution: {integrity: sha512-8Ml/oUK6raNxU+QDat1luwY+dg3rzXxW2FAT1Pfv/Krp03vhbkka5xvaPl0nKvZSWuD7sS6cPd6Xk/o7EGPSAA==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   '@vill-v/bumpp@1.0.4':
     resolution: {integrity: sha512-4fcoU77k6mX+mLkFD8xvL+mklF1UCZ8cG6aP8LA+Z2c4ID2xz3MXYEp0C+Vq4yzjF+6Kj0koqLLoRardIZ6FYQ==}
@@ -6089,15 +6084,6 @@ snapshots:
       vite: 5.2.10(@types/node@20.12.8)(lightningcss@1.24.1)(sass@1.76.0)(terser@5.31.0)
     transitivePeerDependencies:
       - rollup
-
-  '@vill-v/bumpp-gitee@1.0.4':
-    dependencies:
-      '@vill-v/bumpp': 1.0.4
-      cac: 6.7.14
-      consola: 3.2.3
-      ofetch: 1.3.4
-      ora: 8.0.1
-      rc9: 2.1.2
 
   '@vill-v/bumpp@1.0.4':
     dependencies:
