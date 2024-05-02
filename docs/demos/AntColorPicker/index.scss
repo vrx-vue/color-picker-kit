@@ -1,0 +1,36 @@
+$vrx-color-picker-border: var(--vp-c-bg-alt);
+$vrx-color-picker-block-rounded: 4px;
+$prefix: ant-color-picker;
+$vrx-color-picker-dot: var(--vp-c-bg);
+$vrx-color-picker-dot-size: 12px;
+$vrx-color-picker-slider-size: 8px;
+@import '@vrx/color-picker-kit-style/scss/index.scss';
+
+.#{$prefix} {
+  width: 223px;
+  padding: 12px;
+  box-shadow: $vrx-color-picker-shadow;
+  border-radius: $vrx-color-picker-block-rounded;
+  .#{$prefix}-palette {
+    height: 160px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  .#{$prefix}-control-wrapper {
+    display: flex;
+  }
+  .#{$prefix}-slider-group {
+    flex: 1;
+    min-width: 0;
+    margin-right: 10px;
+  }
+
+  .#{$prefix}-hue-slider {
+    margin-bottom: 12px;
+  }
+
+  .#{$prefix}-preview {
+    width: 30px;
+    height: 30px;
+  }
+}

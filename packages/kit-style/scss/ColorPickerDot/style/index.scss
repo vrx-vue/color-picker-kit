@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+// 颜色选择器可拖拽操作部分组件的样式
+.#{$prefix}-dot {
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: $vrx-color-picker-dot-size;
+  width: $vrx-color-picker-dot-size;
+  height: $vrx-color-picker-dot-size;
+  position: absolute;
+  left: 0;
+  box-shadow: $vrx-color-picker-shadow;
+  border: 2px solid $vrx-color-picker-dot;
+}

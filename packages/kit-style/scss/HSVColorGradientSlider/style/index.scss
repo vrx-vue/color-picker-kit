@@ -1,0 +1,7 @@
+@import '../../HSVColorSlider/style/index.scss';
+@import '../../variables.scss';
+
+// hsv 颜色调节中 h 的调节组件
+.#{$prefix}-gradient-slider {
+  background-image: linear-gradient(to right, red, #ff0, #0f0, #0ff, #00f, #f0f, red);
+}

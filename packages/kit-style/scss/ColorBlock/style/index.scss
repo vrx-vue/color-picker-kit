@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+// 用于展示选择颜色的方块
+// 这层主要为了在具有透明度的颜色时，显示透明度网格
+.#{$prefix}-block {
+  border-radius: $vrx-color-picker-block-rounded;
+  background-image: conic-gradient(
+    #0000000f 0 25%,
+    transparent 0 50%,
+    #0000000f 0 75%,
+    transparent 0
+  );
+  border: 1px solid $vrx-color-picker-border;
+  box-sizing: border-box;
+  background-size: 50% 50%;
+  min-width: 24px;
+  height: 100%;
+}
+
+// 用于展示选择颜色的方块
+.#{$prefix}-block-inner {
+  border-radius: $vrx-color-picker-block-rounded;
+  width: 100%;
+  height: 100%;
+}

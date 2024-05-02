@@ -1,0 +1,49 @@
+{
+  "name": "@vrx/color-picker-kit",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "HSV 风格颜色选择器快速成型工具",
+  "type": "module",
+  "author": {
+    "name": "whitekite",
+    "email": "1075790909@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrx-vue/color-picker-kit.git",
+    "directory": "packages/kit"
+  },
+  "homepage": "https://vrx.gitee.io/color-picker-kit/",
+  "keywords": [
+    "color-picker",
+    "vue",
+    "vue-component"
+  ],
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vrx-cp build",
+    "watch": "vrx-cp watch"
+  },
+  "peerDependencies": {
+    "vue": ">=3.2.45"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^4.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false
+}

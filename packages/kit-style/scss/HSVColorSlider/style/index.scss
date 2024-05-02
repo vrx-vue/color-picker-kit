@@ -1,0 +1,18 @@
+@import '../../ColorPickerDot/style/index.scss';
+@import '../../variables.scss';
+@import '../../common.scss';
+
+// 横向百分比调节组件
+.#{$prefix}-slider {
+  border: 1px solid $vrx-color-picker-border;
+  box-sizing: border-box;
+  border-radius: $vrx-color-picker-slider-size;
+  height: $vrx-color-picker-slider-size;
+  position: relative;
+}
+
+// 横向百分比调节组件拖拽部分
+.#{$prefix}-slider-dot {
+  margin-left: calc(0px - ($vrx-color-picker-dot-size / 2));
+  top: calc(-1px - (($vrx-color-picker-dot-size - $vrx-color-picker-slider-size) / 2));
+}

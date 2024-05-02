@@ -1,0 +1,21 @@
+{
+  "name": "@vrx/playground",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "playground:dev": "vite",
+    "playground:build": "vite build",
+    "playground:preview": "vite preview"
+  },
+  "dependencies": {
+    "@arco-design/web-vue": "^2.55.1",
+    "@vrx/color-picker-kit": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vrx/color-picker-kit-style": "workspace:*",
+    "vite": "^5.2.11"
+  }
+}

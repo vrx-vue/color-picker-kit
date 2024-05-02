@@ -1,0 +1,99 @@
+{
+  "ColorBlock": {
+    "props": [
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" },
+      { "desc": "颜色", "type": "string", "name": "value", "default": "必填" },
+      { "desc": "内部颜色显示样式", "type": "any", "name": "innerClass", "default": "必填" },
+      {
+        "desc": "内部颜色显示样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "innerStyle"
+      }
+    ],
+    "events": []
+  },
+  "ColorPickerDot": {
+    "props": [
+      { "desc": "是否禁用", "type": "boolean ", "name": "disabled", "default": "false" },
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" }
+    ],
+    "events": []
+  },
+  "HSVColorAlphaSlider": {
+    "props": [
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" },
+      { "desc": "是否禁用", "type": "boolean ", "name": "disabled", "default": "false" },
+      { "desc": "颜色", "type": "HSVA", "name": "color", "default": "必填" },
+      { "desc": "进度条样式", "type": "any", "name": "sliderClass", "default": "必填" },
+      {
+        "desc": "进度条样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "sliderStyle"
+      },
+      { "desc": "操作组件样式", "type": "any", "name": "dotClass", "default": "必填" },
+      {
+        "desc": "操作组件样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "dotStyle"
+      }
+    ],
+    "events": [{ "type": "[e: HSVA]", "name": "change", "desc": "值修改事件" }]
+  },
+  "HSVColorBlock": {
+    "props": [
+      { "desc": "是否禁用", "type": "boolean ", "name": "disabled", "default": "false" },
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" },
+      { "desc": "内部颜色显示样式", "type": "any", "name": "innerClass", "default": "必填" },
+      {
+        "desc": "内部颜色显示样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "innerStyle"
+      },
+      { "desc": "颜色", "type": "HSVA", "name": "color", "default": "必填" }
+    ],
+    "events": []
+  },
+  "HSVColorGradientSlider": {
+    "props": [
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" },
+      { "desc": "是否禁用", "type": "boolean ", "name": "disabled", "default": "false" },
+      { "desc": "颜色", "type": "HSVA", "name": "color", "default": "必填" },
+      { "desc": "操作组件样式", "type": "any", "name": "dotClass", "default": "必填" },
+      {
+        "desc": "操作组件样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "dotStyle"
+      }
+    ],
+    "events": [{ "type": "[e: HSVA]", "name": "change", "desc": "值修改事件" }]
+  },
+  "HSVColorPalette": {
+    "props": [
+      { "desc": "是否禁用", "type": "boolean ", "name": "disabled", "default": "false" },
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" },
+      { "desc": "颜色", "type": "HSVA", "name": "color", "default": "必填" },
+      { "desc": "操作组件样式", "type": "any", "name": "dotClass", "default": "必填" },
+      {
+        "desc": "操作组件样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "dotStyle"
+      }
+    ],
+    "events": [{ "type": "[e: HSVA]", "name": "change", "desc": "值修改事件" }]
+  },
+  "HSVColorSlider": {
+    "props": [
+      { "desc": "百分比", "type": "number ", "name": "value", "default": "0" },
+      { "desc": "是否禁用", "type": "boolean ", "name": "disabled", "default": "false" },
+      { "desc": "css class 前缀", "type": "string ", "name": "prefix" },
+      { "desc": "背景色", "type": "string", "name": "color", "default": "必填" },
+      { "desc": "操作组件样式", "type": "any", "name": "dotClass", "default": "必填" },
+      {
+        "desc": "操作组件样式",
+        "type": "string | false | CSSProperties | StyleValue[]  ",
+        "name": "dotStyle"
+      }
+    ],
+    "events": [{ "type": "[e: number]", "name": "change", "desc": "值修改事件" }]
+  }
+}

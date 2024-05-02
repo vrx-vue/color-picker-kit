@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+*.local
+.idea
+dist
+.turbo
+.pnpm-debug.log
+packages/kit-style/css
+docs/.vitepress/cache

@@ -1,0 +1,117 @@
+// 样式前缀
+$prefix: t-color-picker;
+
+// 拖拽组件颜色
+$t-color-picker-dot: var(--vp-c-bg);
+// 拖拽组件大小
+$t-color-picker-dot-size: 18px;
+// 颜色选择器横向选择器高度
+$t-color-picker-slider-size: 8px;
+// 颜色展示组件的圆角
+$t-color-picker-block-rounded: 3px;
+// 默认阴影颜色
+$t-color-picker-shadow: 0 2px 8px #00000026;
+
+.#{$prefix} {
+  width: 223px;
+  padding: 12px;
+  box-shadow: $t-color-picker-shadow;
+  border-radius: $t-color-picker-block-rounded;
+
+  // 用于展示选择颜色的方块
+  // 这层主要为了在具有透明度的颜色时，显示透明度网格
+  .#{$prefix}-block {
+    border-radius: $t-color-picker-block-rounded;
+    background-image: conic-gradient(
+      #0000000f 0 25%,
+      transparent 0 50%,
+      #0000000f 0 75%,
+      transparent 0
+    );
+    box-sizing: border-box;
+    background-size: 50% 50%;
+    width: 28px;
+    height: 28px;
+  }
+
+  // 用于展示选择颜色的方块
+  .#{$prefix}-block-inner {
+    border-radius: $t-color-picker-block-rounded;
+    width: 100%;
+    height: 100%;
+  }
+
+  // 颜色选择器可拖拽操作部分组件的样式
+  .#{$prefix}-dot {
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: $t-color-picker-dot-size;
+    width: $t-color-picker-dot-size;
+    height: $t-color-picker-dot-size;
+    position: absolute;
+    left: 0;
+    box-shadow: $t-color-picker-shadow;
+    border: 2px solid $t-color-picker-dot;
+  }
+
+  // 颜色透明度调节组件的样式
+  .#{$prefix}-alpha-slider {
+    background-image: conic-gradient(
+      #0000000f 0 25%,
+      transparent 0 50%,
+      #0000000f 0 75%,
+      transparent 0
+    );
+    background-size: calc($t-color-picker-dot-size / 2) calc($t-color-picker-dot-size / 2);
+    border-radius: calc($t-color-picker-dot-size / 2);
+  }
+
+  // 横向百分比调节组件
+  .#{$prefix}-slider {
+    box-sizing: border-box;
+    border-radius: $t-color-picker-slider-size;
+    height: $t-color-picker-slider-size;
+    position: relative;
+  }
+
+  // 横向百分比调节组件拖拽部分
+  .#{$prefix}-slider-dot {
+    margin-left: calc(0px - ($t-color-picker-dot-size / 2));
+    top: calc(-1px - (($t-color-picker-dot-size - $t-color-picker-slider-size) / 2));
+  }
+
+  // hsv 颜色调节中 h 的调节组件
+  .#{$prefix}-gradient-slider {
+    background-image: linear-gradient(to right, red, #ff0, #0f0, #0ff, #00f, #f0f, red);
+    margin-bottom: 10px;
+  }
+
+  // hsv 颜色选择中 sv 颜色调节背景
+  .#{$prefix}-palette {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, #000, transparent), linear-gradient(90deg, #fff, #fff0);
+    border-radius: $t-color-picker-block-rounded;
+    height: 160px;
+  }
+
+  // hsv 颜色选择中 sv 颜色调节拖拽组件
+  .#{$prefix}-palette-dot {
+    margin-top: calc(0px - ($t-color-picker-dot-size / 2));
+    margin-left: calc(0px - ($t-color-picker-dot-size / 2));
+    top: 0;
+  }
+
+  .#{$prefix}-control-wrapper {
+    display: flex;
+    padding-top: 12px;
+  }
+
+  .#{$prefix}-slider-group {
+    flex: 1;
+    min-width: 0;
+    margin-right: 12px;
+  }
+}

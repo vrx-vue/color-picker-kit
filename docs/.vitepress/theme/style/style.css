@@ -1,0 +1,51 @@
+:root {
+  --vp-custom-block-warning-border: transparent;
+  --vp-custom-block-info-border: transparent;
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-danger-border: transparent;
+  --vp-custom-block-details-border: transparent;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    92.06deg,
+    #43e97b -17.9%,
+    #257cff 43.39%,
+    #43e97b 99.4%
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    to right,
+    red,
+    #ff0,
+    #0f0,
+    #0ff,
+    #00f,
+    #f0f,
+    red
+  );
+  --vp-home-hero-image-filter: blur(60px);
+  --vp-c-brand-1: #10b981;
+  --vp-c-brand-2: #10b981;
+  --vp-c-brand-3: #047857;
+}
+
+.VPHero.has-image .image-src {
+  height: 220px;
+}
+
+.vp-doc th {
+  background-color: transparent;
+  color: var(--vp-c-brand-1);
+  white-space: nowrap;
+}
+
+.vp-doc td,
+.vp-doc th {
+  border-left: none;
+  border-right: none;
+  padding: 9px 16px;
+  text-align: center;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}

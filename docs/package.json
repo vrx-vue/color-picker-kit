@@ -1,0 +1,41 @@
+{
+  "name": "vrx-color-picker-kit-docs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "description": "HSV 风格颜色选择器快速成型工具预设样式",
+  "type": "module",
+  "author": {
+    "name": "whitekite",
+    "email": "1075790909@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrx-vue/color-picker-kit.git",
+    "directory": "packages/docs"
+  },
+  "homepage": "https://vrx.gitee.io/color-picker-kit/",
+  "keywords": [
+    "color-picker",
+    "vue",
+    "vue-component"
+  ],
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:serve": "vitepress serve .",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
+  },
+  "dependencies": {
+    "@vrx/color-picker-kit": "workspace:*",
+    "workbox-window": "^7.1.0"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "@vite-pwa/vitepress": "^0.5.0",
+    "@vrx/color-picker-kit-style": "workspace:*",
+    "sass": "^1.76.0",
+    "unocss": "^0.59.4",
+    "vitepress": "^1.1.4"
+  }
+}

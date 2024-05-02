@@ -1,0 +1,15 @@
+// 样式前缀
+$prefix: vrx-color-picker !default;
+
+// 拖拽组件颜色
+$vrx-color-picker-dot: var(--#{$prefix}-dot, #fff) !default;
+// 拖拽组件大小
+$vrx-color-picker-dot-size: 16px !default;
+// 颜色选择器边框部分颜色
+$vrx-color-picker-border: var(--#{$prefix}-border, #e2e2e2) !default;
+// 颜色选择器横向选择器高度
+$vrx-color-picker-slider-size: 14px !default;
+// 颜色展示组件的圆角
+$vrx-color-picker-block-rounded: var(--#{$prefix}-block-rounded, 2px) !default;
+// 默认阴影颜色
+$vrx-color-picker-shadow: 0 2px 8px #00000026 !default;

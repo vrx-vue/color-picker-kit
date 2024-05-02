@@ -1,0 +1,14 @@
+@import '../../HSVColorSlider/style/index.scss';
+@import '../../variables.scss';
+
+// 颜色透明度调节组件的样式
+.#{$prefix}-alpha-slider {
+  background-image: conic-gradient(
+    #0000000f 0 25%,
+    transparent 0 50%,
+    #0000000f 0 75%,
+    transparent 0
+  );
+  background-size: calc($vrx-color-picker-dot-size / 2) calc($vrx-color-picker-dot-size / 2);
+  border-radius: calc($vrx-color-picker-dot-size / 2);
+}

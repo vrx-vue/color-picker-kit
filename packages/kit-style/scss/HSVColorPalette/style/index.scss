@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+@import '../../common.scss';
+// hsv 颜色选择中 sv 颜色调节背景
+.#{$prefix}-palette {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(0deg, #000, transparent), linear-gradient(90deg, #fff, #fff0);
+}
+
+// hsv 颜色选择中 sv 颜色调节拖拽组件
+.#{$prefix}-palette-dot {
+  margin-top: calc(0px - ($vrx-color-picker-dot-size / 2));
+  margin-left: calc(0px - ($vrx-color-picker-dot-size / 2));
+  top: 0;
+}
