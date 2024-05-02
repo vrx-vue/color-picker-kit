@@ -18,7 +18,7 @@ export default withPwa(
     themeConfig: {
       logo: '/icon.svg',
       lastUpdatedText: '最后更新时间',
-      socialLinks: [{ link: 'https://gitee.com/vrx/color-picker-kit', icon: 'github' }],
+      socialLinks: [{ link: 'https://github.com/vrx-vue/color-picker-kit', icon: 'github' }],
       outline: {
         label: '本页',
       },
