@@ -14,7 +14,7 @@
     "url": "https://github.com/vrx-vue/color-picker-kit.git",
     "directory": "packages/docs"
   },
-  "homepage": "https://vrx.gitee.io/color-picker-kit/",
+  "homepage": "https://vrx-vue.github.io/color-picker-kit/",
   "keywords": [
     "color-picker",
     "vue",
