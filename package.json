@@ -14,7 +14,6 @@
     "docs:build": "pnpm --filter ./docs/ docs:build"
   },
   "devDependencies": {
-    "@arco-design/web-vue": "^2.55.1",
     "@types/node": "^20.12.8",
     "@vill-v/bumpp": "^1.0.4",
     "@vill-v/eslint-config": "^1.2.1",
@@ -25,7 +24,6 @@
     "prettier": "^3.2.5",
     "sass": "^1.76.0",
     "taze": "^0.13.8",
-    "tsup": "^8.0.2",
     "turbo": "^1.13.3",
     "typescript": "^5.4.5",
     "void-fs": "^0.0.1-beta.15",
