@@ -13,3 +13,5 @@ $vrx-color-picker-slider-size: 14px !default;
 $vrx-color-picker-block-rounded: var(--#{$prefix}-block-rounded, 2px) !default;
 // 默认阴影颜色
 $vrx-color-picker-shadow: 0 2px 8px #00000026 !default;
+// 颜色预览块默认大小
+$vrx-color-picker-block-size: var(--#{$prefix}-block-size, 40px) !default;

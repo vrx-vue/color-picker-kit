@@ -11,7 +11,7 @@ import meta from '../meta.json'
 </script>
 
 <div class="bg-$vp-c-brand-1 rounded-md p-40px flex-1 min-h-0 flex justify-center items-center shadow mt-10px">
-  <ColorBlock class="w-40px min-h-40px" innerClass="min-h-38px" value="#43E97B" />
+  <ColorBlock class="w-40px h-40px" value="#43E97B" />
 </div>
 
 ## API

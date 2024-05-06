@@ -13,8 +13,8 @@
   border: 1px solid $vrx-color-picker-border;
   box-sizing: border-box;
   background-size: 50% 50%;
-  min-width: 24px;
-  height: 100%;
+  width: $vrx-color-picker-block-size;
+  height: $vrx-color-picker-block-size;
 }
 
 // 用于展示选择颜色的方块
