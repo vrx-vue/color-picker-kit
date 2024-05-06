@@ -4,6 +4,7 @@ $prefix: ant-color-picker;
 $vrx-color-picker-dot: var(--vp-c-bg);
 $vrx-color-picker-dot-size: 12px;
 $vrx-color-picker-slider-size: 8px;
+$vrx-color-picker-block-size: 30px;
 @import '@vrx/color-picker-kit-style/scss/index.scss';
 
 .#{$prefix} {
@@ -27,10 +28,5 @@ $vrx-color-picker-slider-size: 8px;
 
   .#{$prefix}-hue-slider {
     margin-bottom: 12px;
-  }
-
-  .#{$prefix}-preview {
-    width: 30px;
-    height: 30px;
   }
 }

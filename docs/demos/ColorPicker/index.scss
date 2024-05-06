@@ -1,5 +1,6 @@
 $vrx-color-picker-border: var(--vp-c-bg-alt);
 $vrx-color-picker-dot: var(--vp-c-bg);
+$vrx-color-picker-block-size: 40px;
 @import '@vrx/color-picker-kit-style/scss/index.scss';
 .#{$prefix} {
   width: 260px;
@@ -20,10 +21,5 @@ $vrx-color-picker-dot: var(--vp-c-bg);
 
   .#{$prefix}-hue-slider {
     margin-bottom: 10px;
-  }
-
-  .#{$prefix}-preview {
-    width: 40px;
-    height: 40px;
   }
 }
