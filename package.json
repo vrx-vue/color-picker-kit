@@ -2,7 +2,7 @@
   "name": "vrx-color-picker",
   "version": "0.0.2",
   "private": true,
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.0",
   "type": "module",
   "scripts": {
     "build": "turbo run build",
@@ -14,13 +14,13 @@
     "docs:build": "pnpm --filter ./docs/ docs:build"
   },
   "devDependencies": {
-    "@types/node": "^20.12.8",
+    "@types/node": "^20.12.9",
     "@vill-v/bumpp": "^1.0.4",
     "@vill-v/eslint-config": "^1.2.1",
     "@vill-v/prettier-config": "^1.0.0",
     "@vill-v/tsconfig": "^1.0.1",
     "@vrx/cp": "0.0.1-beta.97",
-    "eslint": "^9.1.1",
+    "eslint": "^9.2.0",
     "prettier": "^3.2.5",
     "sass": "^1.76.0",
     "taze": "^0.13.8",
