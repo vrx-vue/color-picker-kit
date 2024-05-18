@@ -9,7 +9,7 @@
     "playground:preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.1",
+    "@arco-design/web-vue": "^2.55.2",
     "@vrx/color-picker-kit": "workspace:*"
   },
   "devDependencies": {

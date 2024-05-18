@@ -2,31 +2,31 @@
   "name": "vrx-color-picker",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.1.1",
   "type": "module",
   "scripts": {
     "build": "turbo run build",
     "release": "vbumpp -r && pnpm build",
     "update:deps": "taze major -w -i -a -r -f",
-    "clean:deps": "vfdel node_modules packages/*/node_modules playground/*/node_modules",
+    "clean:deps": "vfdel node_modules packages/*/node_modules playground/node_modules docs/node_modules",
     "force:clean:deps": "vfdel pnpm-lock.yaml && pnpm clean:deps",
     "force:install": "pnpm force:clean:deps && pnpm install",
     "docs:build": "pnpm --filter ./docs/ docs:build"
   },
   "devDependencies": {
-    "@types/node": "^20.12.9",
+    "@types/node": "^20.12.12",
     "@vill-v/bumpp": "^1.0.4",
     "@vill-v/eslint-config": "^1.2.1",
     "@vill-v/prettier-config": "^1.0.0",
     "@vill-v/tsconfig": "^1.0.1",
-    "@vrx/cp": "0.0.1-beta.97",
-    "eslint": "^9.2.0",
+    "@vrx/cp": "0.0.1-beta.99",
+    "eslint": "^9.3.0",
     "prettier": "^3.2.5",
-    "sass": "^1.76.0",
+    "sass": "^1.77.2",
     "taze": "^0.13.8",
     "turbo": "^1.13.3",
     "typescript": "^5.4.5",
     "void-fs": "^0.0.1-beta.15",
-    "vue": "^3.4.26"
+    "vue": "^3.4.27"
   }
 }

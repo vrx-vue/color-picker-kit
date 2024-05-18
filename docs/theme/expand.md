@@ -49,6 +49,10 @@
 ```
 
 ```vue[vue]
+// @noErrors
+<script lang="ts" setup>
+  import { HSVColorPalette } from '@vrx/color-picker-kit'
+</script>
 <template>
   <!-- 或任意组件 -->
   <HSVColorPalette prefix="ant-color-picker" />

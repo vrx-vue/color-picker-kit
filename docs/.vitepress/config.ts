@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
 import UnoCss from 'unocss/vite'
 import pkg from '../package.json'
 import { pwa } from './pwa'
@@ -13,6 +14,9 @@ export default withPwa(
     vite: {
       server: { port: 3002, host: true },
       plugins: [UnoCss()],
+    },
+    markdown: {
+      codeTransformers: [transformerTwoslash({ explicitTrigger: false })],
     },
     description: 'HSV 风格颜色选择器快速成型工具',
     themeConfig: {

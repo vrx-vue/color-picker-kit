@@ -34,7 +34,8 @@
 ## tinyColor
 
 ```ts{1,4}
-import { tinyColor } from '@vrx/color-picker-kit'
+import { ref } from 'vue'
+import { tinyColor,HSVA } from '@vrx/color-picker-kit'
 
 const initColor = () => {
   const v = tinyColor('#43E97B', { format: 'hex' }).toHsv()
@@ -50,4 +51,3 @@ const color = ref<HSVA>(initColor())
 ```
 
 是一个颜色值解析与格式转换的包，详见 [文档](https://tinycolor.vercel.app/) 与 [GitHub](https://github.com/scttcper/tinycolor)
-
