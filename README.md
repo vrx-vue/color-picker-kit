@@ -1,4 +1,6 @@
-<img src="https://vrx-vue.github.io/color-picker-kit/icon.svg" width="200" height="300" style="display:block;margin:auto">
+<p align="center">
+<img src="https://vrx-vue.github.io/color-picker-kit/icon.svg" width="200" height="250">
+</p>
 
 # @vrx/color-picker-kit
 <!-- automd:badges color="green" license licenseBranch name="@vrx/color-picker-kit"  bundlephobia packagephobia -->
