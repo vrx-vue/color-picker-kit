@@ -30,7 +30,7 @@
     }
   },
   "scripts": {
-    "build": "vrx-cp build",
+    "build": "automd && vrx-cp build",
     "watch": "vrx-cp watch"
   },
   "peerDependencies": {

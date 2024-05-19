@@ -19,7 +19,7 @@
     "vue-component"
   ],
   "scripts": {
-    "build": "vrx-cp-css scss --output css"
+    "build": "automd && vrx-cp-css scss --output css"
   },
   "peerDependencies": {
     "sass": "*"

@@ -4,8 +4,19 @@
   "private": true,
   "packageManager": "pnpm@9.1.1",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrx-vue/color-picker-kit.git",
+    "directory": "packages/kit"
+  },
+  "homepage": "https://vrx-vue.github.io/color-picker-kit/",
+  "keywords": [
+    "color-picker",
+    "vue",
+    "vue-component"
+  ],
   "scripts": {
-    "build": "turbo run build",
+    "build": "automd && turbo run build",
     "release": "vbumpp -r && pnpm build",
     "update:deps": "taze major -w -i -a -r -f",
     "clean:deps": "vfdel node_modules packages/*/node_modules playground/node_modules docs/node_modules",
@@ -20,6 +31,7 @@
     "@vill-v/prettier-config": "^1.0.0",
     "@vill-v/tsconfig": "^1.0.1",
     "@vrx/cp": "0.0.1-beta.99",
+    "automd": "^0.3.7",
     "eslint": "^9.3.0",
     "prettier": "^3.2.5",
     "sass": "^1.77.2",
