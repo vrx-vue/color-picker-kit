@@ -37,6 +37,6 @@
     "css"
   ],
   "devDependencies": {
-    "@vrx-cp/css": "^0.0.1-beta.99"
+    "@vrx-cp/css": "^0.1.2"
   }
 }

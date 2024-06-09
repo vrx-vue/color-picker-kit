@@ -1,5 +1,5 @@
 {
-  "pipeline": {
+  "tasks": {
     "build": {
       "dependsOn": [
         "^build"
@@ -8,5 +8,6 @@
         "dist/**"
       ]
     }
-  }
+  },
+  "ui":"stream"
 }

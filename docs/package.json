@@ -31,12 +31,12 @@
     "workbox-window": "^7.1.0"
   },
   "devDependencies": {
-    "@shikijs/vitepress-twoslash": "^1.5.2",
+    "@shikijs/vitepress-twoslash": "^1.6.3",
     "@vite-pwa/assets-generator": "^0.2.4",
     "@vite-pwa/vitepress": "^0.5.0",
     "@vrx/color-picker-kit-style": "workspace:*",
-    "sass": "^1.77.2",
-    "unocss": "^0.60.2",
-    "vitepress": "^1.2.0"
+    "sass": "^1.77.4",
+    "unocss": "^0.60.4",
+    "vitepress": "^1.2.3"
   }
 }
