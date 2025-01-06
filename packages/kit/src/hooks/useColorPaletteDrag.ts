@@ -17,7 +17,7 @@ export const useColorPaletteDrag = (
     return (v / size) * 100
   }
 
-  const draggle = (e: MouseEvent) => {
+  const draggle = (e: MouseEvent | Touch) => {
     const rect = containerRef.value!.getBoundingClientRect()
     const left = precentValue(e.clientX, rect.x, rect.width)
     const top = 100 - precentValue(e.clientY, rect.y, rect.height)
@@ -31,17 +31,23 @@ export const useColorPaletteDrag = (
     isDraggle.value = false
     window.removeEventListener('mousemove', mousemove)
     window.removeEventListener('mouseup', dragEnd)
+    window.removeEventListener('touchend', dragEnd)
     window.removeEventListener('contextmenu', dragEnd)
   }
 
-  const dragStart = (e: MouseEvent) => {
+  const dragStart = (e: MouseEvent | TouchEvent) => {
     if (disabled()) {
       return
     }
     isDraggle.value = true
-    draggle(e)
+    if (e instanceof TouchEvent) {
+      draggle(e.touches[0])
+    } else {
+      draggle(e)
+    }
     window.addEventListener('mousemove', mousemove)
     window.addEventListener('mouseup', dragEnd)
+    window.addEventListener('touchend', dragEnd)
     window.addEventListener('contextmenu', dragEnd)
   }
 
@@ -54,6 +60,15 @@ export const useColorPaletteDrag = (
     dragEnd()
   }
 
+  const touchmove = (e: TouchEvent) => {
+    e.preventDefault()
+    if (e.touches.length) {
+      draggle(e.touches[0])
+      return
+    }
+    dragEnd()
+  }
+
   onBeforeUnmount(() => {
     dragEnd()
   })
@@ -61,6 +76,7 @@ export const useColorPaletteDrag = (
   return {
     dragStart,
     dragEnd,
+    touchmove,
     containerRef,
   }
 }

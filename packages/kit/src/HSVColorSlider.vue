@@ -44,7 +44,7 @@
     change: [e: number]
   }>()
 
-  const { containerRef, dragStart } = useColorPaletteDrag(
+  const { containerRef, dragStart, dragEnd, touchmove } = useColorPaletteDrag(
     () => [props.value, 0],
     (e) => emit('change', e[0]),
     () => props.disabled
@@ -57,6 +57,8 @@
     ref="containerRef"
     :class="[`${classPrefix}-slider`, { [`${classPrefix}-disabled`]: disabled }]"
     @mousedown="dragStart"
+    @touchmove="touchmove"
+    @touchend="dragEnd"
   >
     <ColorPickerDot
       :class="[`${classPrefix}-slider-dot`, dotClass]"

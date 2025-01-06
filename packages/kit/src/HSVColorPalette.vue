@@ -44,7 +44,7 @@
     new TinyColor({ h: props.color.h, s: 100, v: 100 }).toRgbString()
   )
 
-  const { containerRef, dragStart } = useColorPaletteDrag(
+  const { containerRef, dragStart, dragEnd, touchmove } = useColorPaletteDrag(
     () => [props.color.s as number, props.color.v as number],
     (e) => emit('change', { ...props.color, s: e[0], v: e[1] }),
     () => props.disabled
@@ -58,6 +58,8 @@
     :class="[`${classPrefix}-palette`, { [`${classPrefix}-disabled`]: disabled }]"
     :style="{ backgroundColor }"
     @mousedown="dragStart"
+    @touchmove="touchmove"
+    @touchend="dragEnd"
   >
     <ColorPickerDot
       :class="[`${classPrefix}-palette-dot`, dotClass]"
