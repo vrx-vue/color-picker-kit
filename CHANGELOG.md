@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/vrx-vue/color-picker-kit/compare/v0.1.0...v0.2.0)
+
+### 🚀 特性
+
+- **kit-style:** Scss replace [`@import`](https://sass-lang.com/blog/import-is-deprecated/) to `@use` ([f6b9ea2](https://github.com/vrx-vue/color-picker-kit/commit/f6b9ea2))
+- **kit:** 拖拽支持 `TouchEvent` 事件 ([b9bca05](https://github.com/vrx-vue/color-picker-kit/commit/b9bca05))
+
+### 💅 重构
+
+- **kit:** 使用响应式 Props 解构内部重构 ([9100418](https://github.com/vrx-vue/color-picker-kit/commit/9100418))
+
+### 📖 文档
+
+- Markdown 增加 twoslash 支持 ([bd51060](https://github.com/vrx-vue/color-picker-kit/commit/bd51060))
+
+### 🏡 框架
+
+- Use [automd](https://automd.unjs.io/) to update `README.md` ([892e60e](https://github.com/vrx-vue/color-picker-kit/commit/892e60e))
+- Update `README.md` ([5b93c0a](https://github.com/vrx-vue/color-picker-kit/commit/5b93c0a))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v0.1.0
 
 [compare changes](https://github.com/vrx-vue/color-picker-kit/compare/v0.0.2...v0.1.0)
