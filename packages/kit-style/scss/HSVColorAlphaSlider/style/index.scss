@@ -1,5 +1,5 @@
-@import '../../HSVColorSlider/style/index.scss';
-@import '../../variables.scss';
+@use '../../HSVColorSlider/style/index.scss' as *;
+@use '../../variables.scss' as *;
 
 // 颜色透明度调节组件的样式
 .#{$prefix}-alpha-slider {

@@ -7,7 +7,7 @@
 <!-- automd:badges color="green" license licenseBranch   bundlephobia packagephobia -->
 
 [![npm version](https://img.shields.io/npm/v/@vrx/color-picker-kit-style?color=green)](https://npmjs.com/package/@vrx/color-picker-kit-style)
-[![npm downloads](https://img.shields.io/npm/dm/@vrx/color-picker-kit-style?color=green)](https://npmjs.com/package/@vrx/color-picker-kit-style)
+[![npm downloads](https://img.shields.io/npm/dm/@vrx/color-picker-kit-style?color=green)](https://npm.chart.dev/@vrx/color-picker-kit-style)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx/color-picker-kit-style?color=green)](https://bundlephobia.com/package/@vrx/color-picker-kit-style)
 [![license](https://img.shields.io/github/license/vrx-vue/color-picker-kit?color=green)](https://github.com/vrx-vue/color-picker-kit/blob/true/LICENSE)
 
@@ -34,6 +34,9 @@ pnpm install @vrx/color-picker-kit-style
 
 # bun
 bun install @vrx/color-picker-kit-style
+
+# deno
+deno install @vrx/color-picker-kit-style
 ```
 
 <!-- /automd -->

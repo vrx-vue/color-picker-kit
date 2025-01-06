@@ -14,6 +14,13 @@ export default withPwa(
     vite: {
       server: { port: 3002, host: true },
       plugins: [UnoCss()],
+      css: {
+        preprocessorOptions: {
+          scss: {
+            api: 'modern-compiler',
+          },
+        },
+      },
     },
     markdown: {
       codeTransformers: [transformerTwoslash({ explicitTrigger: false })],

@@ -1,5 +1,5 @@
-@import '../../HSVColorSlider/style/index.scss';
-@import '../../variables.scss';
+@use '../../HSVColorSlider/style/index.scss' as *;
+@use '../../variables.scss' as *;
 
 // hsv 颜色调节中 h 的调节组件
 .#{$prefix}-gradient-slider {

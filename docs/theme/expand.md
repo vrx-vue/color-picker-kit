@@ -5,7 +5,7 @@
 ::: code-group
 
 ```scss[scss]
-@import '@vrx/color-picker-kit-style/scss/index.scss';
+@use '@vrx/color-picker-kit-style/scss/index.scss' as kit;
 ```
 
 ```css[css]
@@ -19,7 +19,7 @@
 ::: code-group
 
 ```scss[scss]
-@import '@vrx/color-picker-kit-style/scss/[组件名称]/style/index.scss';
+@use '@vrx/color-picker-kit-style/scss/[组件名称]/style/index.scss' as *;
 ```
 
 ```css[css]

@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@use '../../variables.scss' as *;
 
 // 颜色选择器可拖拽操作部分组件的样式
 .#{$prefix}-dot {

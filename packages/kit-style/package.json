@@ -22,10 +22,14 @@
     "build": "automd && vrx-cp-css scss --output css"
   },
   "peerDependencies": {
-    "sass": "*"
+    "sass": "*",
+    "sass-embedded": "*"
   },
   "peerDependenciesMeta": {
     "sass": {
+      "optional": true
+    },
+    "sass-embedded": {
       "optional": true
     }
   },
@@ -37,6 +41,6 @@
     "css"
   ],
   "devDependencies": {
-    "@vrx-cp/css": "^0.1.2"
+    "@vrx-cp/css": "^0.4.3"
   }
 }

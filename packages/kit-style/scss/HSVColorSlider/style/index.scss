@@ -1,6 +1,6 @@
-@import '../../ColorPickerDot/style/index.scss';
-@import '../../variables.scss';
-@import '../../common.scss';
+@use '../../ColorPickerDot/style/index.scss' as *;
+@use '../../variables.scss' as *;
+@use '../../common.scss' as *;
 
 // 横向百分比调节组件
 .#{$prefix}-slider {

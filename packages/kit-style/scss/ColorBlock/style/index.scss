@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@use '../../variables.scss' as *;
 
 // 用于展示选择颜色的方块
 // 这层主要为了在具有透明度的颜色时，显示透明度网格

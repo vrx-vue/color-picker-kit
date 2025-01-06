@@ -1,25 +1,28 @@
-$vrx-color-picker-border: var(--vp-c-bg-alt);
-$vrx-color-picker-dot: var(--vp-c-bg);
-$vrx-color-picker-block-size: 40px;
-@import '@vrx/color-picker-kit-style/scss/index.scss';
-.#{$prefix} {
+@use '@vrx/color-picker-kit-style/scss/index.scss' as kit
+  with(
+    $vrx-color-picker-border: var(--vp-c-bg-alt),
+    $vrx-color-picker-dot: var(--vp-c-bg),
+    $vrx-color-picker-block-size: 40px
+  );
+
+.#{kit.$prefix} {
   width: 260px;
-  box-shadow: $vrx-color-picker-shadow;
-  border-radius: $vrx-color-picker-block-rounded;
-  .#{$prefix}-palette {
+  box-shadow: kit.$vrx-color-picker-shadow;
+  border-radius: kit.$vrx-color-picker-block-rounded;
+  .#{kit.$prefix}-palette {
     height: 178px;
   }
-  .#{$prefix}-control-wrapper {
+  .#{kit.$prefix}-control-wrapper {
     display: flex;
     padding: 10px;
   }
-  .#{$prefix}-slider-group {
+  .#{kit.$prefix}-slider-group {
     flex: 1;
     min-width: 0;
     margin-right: 10px;
   }
 
-  .#{$prefix}-hue-slider {
+  .#{kit.$prefix}-hue-slider {
     margin-bottom: 10px;
   }
 }

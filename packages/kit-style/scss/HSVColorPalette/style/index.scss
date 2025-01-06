@@ -1,5 +1,5 @@
-@import '../../variables.scss';
-@import '../../common.scss';
+@use '../../variables.scss' as *;
+@use '../../common.scss' as *;
 // hsv 颜色选择中 sv 颜色调节背景
 .#{$prefix}-palette {
   box-sizing: border-box;

@@ -1,8 +1,8 @@
-@import './variables.scss';
-@import './ColorBlock/style/index.scss';
-@import './ColorPickerDot/style/index.scss';
-@import './HSVColorBlock/style/index.scss';
-@import './HSVColorPalette/style/index.scss';
-@import './HSVColorSlider/style/index.scss';
-@import './HSVColorGradientSlider/style/index.scss';
-@import './HSVColorAlphaSlider/style/index.scss';
+@forward './variables.scss';
+@forward './ColorBlock/style/index.scss';
+@forward './ColorPickerDot/style/index.scss';
+@forward './HSVColorBlock/style/index.scss';
+@forward './HSVColorPalette/style/index.scss';
+@forward './HSVColorSlider/style/index.scss';
+@forward './HSVColorGradientSlider/style/index.scss';
+@forward './HSVColorAlphaSlider/style/index.scss';
