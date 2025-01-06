@@ -9,7 +9,7 @@
     name: 'VrxHSVColorGradientSlider',
   })
 
-  const props = defineProps<
+  const { color, prefix } = defineProps<
     IHsvProps<{
       /**
        * 操作组件样式
@@ -34,13 +34,13 @@
   }>()
 
   const rgbString = computed(() => {
-    const color = new TinyColor({ h: props.color.h, s: 100, v: 100 }).toRgb()
-    return `rgb(${color.r},${color.g},${color.b})`
+    const _color = new TinyColor({ h: color.h, s: 100, v: 100 }).toRgb()
+    return `rgb(${_color.r},${_color.g},${_color.b})`
   })
 
-  const change = (e) => emit('change', { ...props.color, h: (e / 100) * 360 })
+  const change = (e) => emit('change', { ...color, h: (e / 100) * 360 })
 
-  const classPrefix = cssClassPrefix(props.prefix, 'gradient-slider')
+  const classPrefix = cssClassPrefix(prefix, 'gradient-slider')
 </script>
 <template>
   <HSVColorSlider

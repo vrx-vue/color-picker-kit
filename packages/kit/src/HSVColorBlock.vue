@@ -9,29 +9,30 @@
     name: 'VrxHSVColorBlock',
   })
 
-  const props = withDefaults(
-    defineProps<
-      IHsvProps<{
-        /**
-         * 内部颜色显示样式
-         */
-        innerClass?: any
-        /**
-         * 内部颜色显示样式
-         */
-        innerStyle?: StyleValue
-        /**
-         * 是否禁用
-         */
-        disabled?: boolean
-      }>
-    >(),
-    { disabled: false }
-  )
+  const {
+    disabled = false,
+    color,
+    prefix,
+  } = defineProps<
+    IHsvProps<{
+      /**
+       * 内部颜色显示样式
+       */
+      innerClass?: any
+      /**
+       * 内部颜色显示样式
+       */
+      innerStyle?: StyleValue
+      /**
+       * 是否禁用
+       */
+      disabled?: boolean
+    }>
+  >()
 
-  const value = computed(() => new TinyColor(props.color).toRgbString())
+  const value = computed(() => new TinyColor(color).toRgbString())
 
-  const classPrefix = cssClassPrefix(props.prefix)
+  const classPrefix = cssClassPrefix(prefix)
 </script>
 <template>
   <ColorBlock

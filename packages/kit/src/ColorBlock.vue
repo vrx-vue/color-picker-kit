@@ -7,7 +7,7 @@
     name: 'VrxColorBlock',
   })
 
-  const props = defineProps<
+  const { prefix } = defineProps<
     IProps<{
       /**
        * 颜色
@@ -24,7 +24,7 @@
     }>
   >()
 
-  const classPrefix = cssClassPrefix(props.prefix, 'block')
+  const classPrefix = cssClassPrefix(prefix, 'block')
 </script>
 <template>
   <div :class="classPrefix">

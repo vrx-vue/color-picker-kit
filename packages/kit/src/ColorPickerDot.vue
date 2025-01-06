@@ -6,19 +6,16 @@
     name: 'VrxColorPickerDot',
   })
 
-  const props = withDefaults(
-    defineProps<
-      IProps<{
-        /**
-         * 是否禁用
-         */
-        disabled?: boolean
-      }>
-    >(),
-    { disabled: false }
-  )
+  const { prefix, disabled = false } = defineProps<
+    IProps<{
+      /**
+       * 是否禁用
+       */
+      disabled?: boolean
+    }>
+  >()
 
-  const classPrefix = cssClassPrefix(props.prefix)
+  const classPrefix = cssClassPrefix(prefix)
 </script>
 <template>
   <div :class="[`${classPrefix}-dot`, { [`${classPrefix}-disabled`]: disabled }]" />

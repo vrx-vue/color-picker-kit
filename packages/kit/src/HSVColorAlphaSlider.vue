@@ -9,7 +9,7 @@
     name: 'VrxHSVColorAlphaSlider',
   })
 
-  const props = defineProps<
+  const { color, prefix } = defineProps<
     IHsvProps<{
       /**
        * 进度条样式
@@ -42,18 +42,18 @@
   }>()
 
   const backgroundImage = computed(() => {
-    const color = new TinyColor(props.color).toRgb()
-    const colorStr = `${color.r},${color.g},${color.b}`
+    const _color = new TinyColor(color).toRgb()
+    const colorStr = `${_color.r},${_color.g},${_color.b}`
     return `linear-gradient(to right, rgba(${colorStr}, 0), rgb(${colorStr}))`
   })
 
   const rgbString = computed(() => {
-    return new TinyColor(props.color).toRgbString()
+    return new TinyColor(color).toRgbString()
   })
 
-  const change = (e) => emit('change', { ...props.color, a: e / 100 })
+  const change = (e) => emit('change', { ...color, a: e / 100 })
 
-  const classPrefix = cssClassPrefix(props.prefix, 'alpha-slider')
+  const classPrefix = cssClassPrefix(prefix, 'alpha-slider')
 </script>
 <template>
   <div :class="classPrefix">

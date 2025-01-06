@@ -13,25 +13,26 @@
     name: 'VrxHSVColorPalette',
   })
 
-  const props = withDefaults(
-    defineProps<
-      IHsvProps<{
-        /**
-         * 操作组件样式
-         */
-        dotClass?: any
-        /**
-         * 操作组件样式
-         */
-        dotStyle?: StyleValue
-        /**
-         * 是否禁用
-         */
-        disabled?: boolean
-      }>
-    >(),
-    { disabled: false }
-  )
+  const {
+    disabled = false,
+    color,
+    prefix,
+  } = defineProps<
+    IHsvProps<{
+      /**
+       * 操作组件样式
+       */
+      dotClass?: any
+      /**
+       * 操作组件样式
+       */
+      dotStyle?: StyleValue
+      /**
+       * 是否禁用
+       */
+      disabled?: boolean
+    }>
+  >()
 
   const emit = defineEmits<{
     /**
@@ -41,16 +42,16 @@
   }>()
 
   const backgroundColor = computed(() =>
-    new TinyColor({ h: props.color.h, s: 100, v: 100 }).toRgbString()
+    new TinyColor({ h: color.h, s: 100, v: 100 }).toRgbString()
   )
 
   const { containerRef, dragStart, dragEnd, touchmove } = useColorPaletteDrag(
-    () => [props.color.s as number, props.color.v as number],
-    (e) => emit('change', { ...props.color, s: e[0], v: e[1] }),
-    () => props.disabled
+    () => [color.s as number, color.v as number],
+    (e) => emit('change', { ...color, s: e[0], v: e[1] }),
+    () => disabled
   )
 
-  const classPrefix = cssClassPrefix(props.prefix)
+  const classPrefix = cssClassPrefix(prefix)
 </script>
 <template>
   <div

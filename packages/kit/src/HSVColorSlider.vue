@@ -9,33 +9,34 @@
     name: 'VrxHSVColorSlider',
   })
 
-  const props = withDefaults(
-    defineProps<
-      IProps<{
-        /**
-         * 百分比
-         */
-        value?: number
-        /**
-         * 背景色
-         */
-        color: string
-        /**
-         * 操作组件样式
-         */
-        dotClass?: any
-        /**
-         * 操作组件样式
-         */
-        dotStyle?: StyleValue
-        /**
-         * 是否禁用
-         */
-        disabled?: boolean
-      }>
-    >(),
-    { value: 0, disabled: false }
-  )
+  const {
+    value = 0,
+    disabled = false,
+    prefix,
+  } = defineProps<
+    IProps<{
+      /**
+       * 百分比
+       */
+      value?: number
+      /**
+       * 背景色
+       */
+      color: string
+      /**
+       * 操作组件样式
+       */
+      dotClass?: any
+      /**
+       * 操作组件样式
+       */
+      dotStyle?: StyleValue
+      /**
+       * 是否禁用
+       */
+      disabled?: boolean
+    }>
+  >()
 
   const emit = defineEmits<{
     /**
@@ -45,12 +46,12 @@
   }>()
 
   const { containerRef, dragStart, dragEnd, touchmove } = useColorPaletteDrag(
-    () => [props.value, 0],
+    () => [value, 0],
     (e) => emit('change', e[0]),
-    () => props.disabled
+    () => disabled
   )
 
-  const classPrefix = cssClassPrefix(props.prefix)
+  const classPrefix = cssClassPrefix(prefix)
 </script>
 <template>
   <div
