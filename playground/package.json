@@ -9,13 +9,13 @@
     "playground:preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.3",
+    "@arco-design/web-vue": "^2.56.3",
     "@vrx/color-picker-kit": "workspace:*"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
     "@vrx/color-picker-kit-style": "workspace:*",
-    "vite": "^5.2.13"
+    "vite": "^6.0.7"
   }
 }
